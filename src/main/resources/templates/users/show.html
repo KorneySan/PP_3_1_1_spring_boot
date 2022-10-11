@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбранный пользователь</title>
+</head>
+<body>
+<p>Информация о выбранном пользователе</p>
+<p style="font-size: x-large" th:text="${user.firstName + ' ' + user.lastName + ' (' + user.email + ')'}"/>
+<p><a th:href="@{/users}" th:text="Назад"/></p>
+</body>
+</html>
